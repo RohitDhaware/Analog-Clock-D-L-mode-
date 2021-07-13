@@ -41,7 +41,7 @@ body.light .clockContainer{
     height: 2vw;
     width: 2vw;
     border-radius: 50%;
-    background: black;
+    background: gray;
     top:48%;
     left:48.70%;
 }
@@ -56,7 +56,7 @@ body.light .clockContainer{
     top: 25.30%;
     left: 49.4%;
     opacity: 0.8;
-    background: black;
+    background: gray;
     transform-origin: bottom;
 
 }
@@ -67,7 +67,7 @@ body.light .clockContainer{
     top: 13%;
     left: 49.55%;
     opacity: 0.8;
-    background: black;
+    background: gray;
     transform-origin: bottom;
 }
    
@@ -79,7 +79,7 @@ body.light .clockContainer{
     top: 10.2%;
     left: 50.3%;
     opacity: 0.8;
-    background: black;
+    background: gray;
     transform-origin: bottom;
 }
 .toggleClass{
