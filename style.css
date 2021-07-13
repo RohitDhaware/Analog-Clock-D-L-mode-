@@ -1,0 +1,112 @@
+
+body
+{
+     background: #091921;
+}
+body.light{
+    background: #d1dae3;
+}
+.clockContainer{
+    margin: auto;
+    height: 40vw;
+    width: 40vw;
+    background: url(clock.png) no-repeat;
+    background-color: #091921;
+    background-size: 100%;
+    border: 1vw solid #091921;
+    border-radius: 50%;
+    box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+                inset 0 -15px 15px rgba(255,255,255,0.05),
+                0 15px 15px rgba(0,0,0,0.3),
+                inset 0 15px 15px rgba(0,0,0,0.3);
+    position:relative;
+}
+body.light .clockContainer{
+        margin: auto;
+        height: 40vw;
+        width: 40vw;
+        background: url(clock.png) no-repeat;
+        background-color: #d1dae3;
+        background-size: 100%;
+        border: 1vw solid #cad3dc;
+        border-radius: 50%;
+        box-shadow: -8px -8px 15px rgba(255,255,255,0.5),
+                    inset 0 -15px 15px rgba(255,255,255,0.5),
+                    10px 10px 10px rgba(0,0,0,0.1),
+                    inset 10px 10px 10px rgba(0,0,0,0.1);
+        position:relative;
+}
+#mid{
+    position: absolute;
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    background: black;
+    top:48%;
+    left:48.70%;
+}
+#hour, #minute, #second{
+    position:absolute;
+    background: rgb(161, 164, 165);
+    border-radius: 10px;
+}
+#hour{  
+    width: 3%;
+    height: 26%;
+    top: 25.30%;
+    left: 49.4%;
+    opacity: 0.8;
+    background: black;
+    transform-origin: bottom;
+
+}
+
+#minute{
+    width: 2.5%;
+    height: 38%;
+    top: 13%;
+    left: 49.55%;
+    opacity: 0.8;
+    background: black;
+    transform-origin: bottom;
+}
+   
+    
+
+#second{
+    width: 0.5%;
+    height: 41%;
+    top: 10.2%;
+    left: 50.3%;
+    opacity: 0.8;
+    background: black;
+    transform-origin: bottom;
+}
+.toggleClass{
+    position: static;
+    top: 5vh;
+    left:120vh;
+    width:4vh;
+    height:3vh;
+    font-size: 20px;
+    border-radius: 50%;
+    background: #d1dae3;
+    font-family: 'Courier New', Courier, monospace;
+    cursor:pointer;
+    align-items: center;
+    color:#d1dae3;
+    font-weight: bold;
+}
+.toggleClass:before{
+    position: relative;
+    left: 5vh;
+    content: 'Light Mode';
+    white-space: nowrap;
+}
+body.light .toggleClass{
+    background:#091921;
+    color:#091921;
+}
+body.light .toggleClass:before{
+    content: 'Dark Mode';
+}
